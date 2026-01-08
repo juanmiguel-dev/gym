@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-red: #ff00ff;
+  --color-neon-green: #39ff14;
+  --color-neon-cyan: #00f2ff;
+  --color-neon-fuchsia: #ff00ff;
+  --color-deep-dark: #050505;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-neon-red {
+    color: var(--color-neon-red);
+    text-shadow: 0 0 5px var(--color-neon-red), 0 0 10px var(--color-neon-red);
+  }
+
+  .text-neon-green {
+    color: var(--color-neon-green);
+    text-shadow: 0 0 5px var(--color-neon-green), 0 0 10px var(--color-neon-green);
+  }
+
+  .text-neon-cyan {
+    color: var(--color-neon-cyan);
+    text-shadow: 0 0 5px var(--color-neon-cyan), 0 0 10px var(--color-neon-cyan);
+  }
+
+  .border-neon-red {
+    border-color: var(--color-neon-red);
+    box-shadow: 0 0 5px var(--color-neon-red), inset 0 0 5px var(--color-neon-red);
+  }
+
+  .border-neon-green {
+    border-color: var(--color-neon-green);
+    box-shadow: 0 0 5px var(--color-neon-green), inset 0 0 5px var(--color-neon-green);
+  }
+
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .bg-glass-dark {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .neon-shadow-cyan {
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+  }
+
+  .neon-shadow-green {
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+  }
+}
+
+@keyframes pulse-green {
+
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-green {
+  animation: pulse-green 4s ease-in-out infinite;
+}
+
+/* Custom selection color */
+::selection {
+  background: var(--color-neon-red);
+  color: white;
+}
