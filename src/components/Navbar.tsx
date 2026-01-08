@@ -6,6 +6,7 @@ import gsap from "gsap";
 import LogoAnimation from "./LogoAnimation";
 
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -28,8 +29,16 @@ export default function Navbar() {
                     <span className="text-white font-bold tracking-tighter text-xl hidden sm:block">PACHAGYM</span>
                 </a>
 
+                {/* Mobile Menu Toggle */}
+                <button
+                    className="md:hidden flex justify-center w-8 h-8 bg-black/20 rounded-full hover:bg-black/40 transition-all cursor-pointer"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <MoveRight className="text-white" size={24} />
+                </button>
+
                 {/* Nav Links */}
-                <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60 uppercase tracking-widest">
+                <div className={`md:flex ${isOpen ? 'block' : 'hidden'} items-center gap-8 text-sm font-medium text-white/60 uppercase tracking-widest`}>
                     <a href="/nuestro-gym" className="hover:text-white transition-colors cursor-pointer">Nuestro Gym</a>
                     <a href="/servicios" className="hover:text-white transition-colors cursor-pointer">Clases</a>
 
