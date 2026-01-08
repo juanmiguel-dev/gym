@@ -33,13 +33,13 @@ export default function PricingPage() {
                         </div>
 
                         <div className="mb-8 mt-4">
-                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">Plan Despegue</h3>
+                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">Plan Base</h3>
                             <div className="flex items-baseline gap-1">
                                 <span className="text-5xl font-black text-white">$120.000</span>
                                 <span className="text-white/40 font-medium">/ pago único</span>
                             </div>
                             <p className="text-neon-green text-sm font-bold mt-2 flex items-center gap-2">
-                                <Check className="w-4 h-4" /> incluye Hosting por 1 Año
+                                <Check className="w-4 h-4" /> Hosting 1 año (Renovación $19 USD/año)
                             </p>
                         </div>
 
@@ -71,13 +71,16 @@ export default function PricingPage() {
                     {/* Plan 2: Membership System */}
                     <div className="relative group p-8 bg-glass-dark rounded-[2rem] border border-white/5 hover:border-neon-cyan/50 hover:shadow-[0_0_40px_rgba(0,242,255,0.1)] transition-all duration-500 hover:-translate-y-2 md:mt-8">
                         <div className="mb-8">
-                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">CLUB3</h3>
+                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">CLUB DIGITAL</h3>
                             <div className="flex items-baseline gap-1">
                                 <span className="text-5xl font-black text-white">$499.000</span>
                                 <span className="text-white/40 font-medium">/ pago único</span>
                             </div>
                             <p className="text-neon-cyan text-sm font-bold mt-2 flex items-center gap-2">
                                 <Zap className="w-4 h-4" /> Sistema de Membresía y Gestión de Contenidos.
+                            </p>
+                            <p className="text-neon-cyan text-xs font-bold mt-1 pl-6">
+                                Renovación: $49 USD/año
                             </p>
                         </div>
 
