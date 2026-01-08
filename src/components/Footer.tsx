@@ -82,7 +82,7 @@ export default function Footer() {
                         {/* Links Column (Explora) */}
                         <div className="w-full">
                             <h4 className="text-white font-bold uppercase tracking-widest mb-4 text-sm text-left">Explora</h4>
-                            <ul className="space-y-3 text-left">
+                            <ul className="space-y-3 text-left pl-0">
                                 {["Clases", "Entrenadores", "Horarios", "Membresías"].map((item) => (
                                     <li key={item} className="text-left">
                                         <a href={item === "Clases" ? "/servicios" : "#"} className="text-white/60 hover:text-neon-cyan transition-colors flex items-center gap-2 group justify-start cursor-pointer text-sm">
@@ -97,7 +97,7 @@ export default function Footer() {
                         {/* Legal/Contact Column */}
                         <div className="w-full">
                             <h4 className="text-white font-bold uppercase tracking-widest mb-4 text-sm text-left">Legal</h4>
-                            <ul className="space-y-3 text-left">
+                            <ul className="space-y-3 text-left pl-0">
                                 {["Términos", "Privacidad", "Cookies", "Contacto"].map((item) => (
                                     <li key={item} className="text-left">
                                         <a href="#" className="text-white/60 hover:text-white transition-colors cursor-pointer text-sm">
