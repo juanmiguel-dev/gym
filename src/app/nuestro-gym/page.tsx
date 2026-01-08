@@ -27,7 +27,7 @@ export default function NuestroGymPage() {
                     </h1>
                     <p className="text-white/60 text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed">
                         Es el espejo digital de lo que tu gimnasio puede llegar a ser. <br />
-                        <span className="text-white font-medium">Una demo técnica diseñada para dueños que no aceptan el promedio.</span>
+                        <span className="text-white font-medium">Una demo técnica diseñada para demostrar el potencial increible de esta tecnología.</span>
                     </p>
                 </div>
 
@@ -42,7 +42,7 @@ export default function NuestroGymPage() {
                                 Estás navegando por una simulación. "PACHAGYM" no existe como lugar físico, pero la tecnología que ves aquí es 100% real y está lista para implementarse en tu negocio.
                             </p>
                             <p>
-                                Creamos este sitio para demostrar que una web de gimnasio no tiene por qué ser aburrida: puede tener la misma energía, fuerza y dinamismo que tu mejor clase de HIIT.
+                                Desarrollé este sitio para demostrar que una web de gimnasio no tiene por qué ser aburrida: puede tener la misma energía, fuerza y dinamismo que tu mejor clase de HIIT.
                             </p>
                             <div className="pt-4">
                                 <Link href="/planes">
