@@ -80,7 +80,7 @@ export default function BookingForm() {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neon-cyan/5 blur-[100px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/2" />
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neon-fuchsia/5 blur-[100px] rounded-full pointer-events-none translate-y-1/2 -translate-x-1/2" />
 
-                <div className="relative z-10 p-8 md:p-16">
+                <div className="relative z-10 p-2 md:p-4">
                     <form onSubmit={handleSubmit} className="space-y-12">
 
                         {/* 1. Activities Selection */}

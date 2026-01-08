@@ -55,7 +55,7 @@ export default function Footer() {
                     <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
                         <a href="/" className="flex items-center gap-2 mb-6 w-fit mx-auto lg:mx-0 hover:opacity-80 transition-opacity cursor-pointer">
                             <LogoAnimation />
-                            <span className="text-white font-bold tracking-tighter text-2xl">PACHAGYM</span>
+                           
                         </a>
                         <p className="text-white/50 max-w-sm text-lg leading-relaxed mb-8 mx-auto lg:mx-0">
                             Redefiniendo el límite humano a través de tecnología, diseño y sudor honesto.
