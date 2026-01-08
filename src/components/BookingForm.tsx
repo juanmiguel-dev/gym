@@ -58,7 +58,7 @@ export default function BookingForm() {
                     <p className="text-white/60 text-lg">Te hemos enviado los detalles a <span className="text-neon-green">{formData.email}</span>.</p>
                     <button
                         onClick={() => setSubmitted(false)}
-                        className="mt-8 px-8 py-3 bg-white/5 border border-white/10 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white/10 transition-colors"
+                        className="mt-8 px-8 py-3 bg-white/5 border border-white/10 rounded-full text-lg font-bold uppercase tracking-widest hover:bg-white/10 transition-colors"
                     >
                         Agendar Otro
                     </button>
@@ -89,7 +89,7 @@ export default function BookingForm() {
                                 <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs">01</span>
                                 Elige tu Actividad
                             </h3>
-                            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
                                 {ACTIVITIES.map((activity) => {
                                     const Icon = activity.icon;
                                     const isSelected = formData.activities.includes(activity.id);
