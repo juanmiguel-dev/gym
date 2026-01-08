@@ -30,6 +30,7 @@ export default function Navbar() {
 
                 {/* Nav Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60 uppercase tracking-widest">
+                    <a href="/nuestro-gym" className="hover:text-white transition-colors cursor-pointer text-neon-cyan">Nuestro Gym</a>
                     <a href="/servicios" className="hover:text-white transition-colors cursor-pointer">Clases</a>
                     <a href="/turnos" className="hover:text-white transition-colors cursor-pointer">Horarios</a>
                     <a href="/blog" className="hover:text-white transition-colors cursor-pointer">Blog</a>
