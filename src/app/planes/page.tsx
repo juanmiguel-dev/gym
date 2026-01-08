@@ -32,7 +32,7 @@ export default function PricingPage() {
                         {/* Featured Badge */}
                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-neon-green text-black font-black uppercase text-xs tracking-widest px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(57,255,20,0.4)] flex items-center gap-1">
                             <Star className="w-3 h-3 fill-current" />
-                            Oferta Limitada (3 Cupos)
+                            Oferta Limitada (4 Cupos)
                         </div>
 
                         <div className="mb-8 mt-4">
