@@ -68,7 +68,7 @@ export default function Footer() {
 
                         {/* Planes Button */}
                         <div className="mt-8">
-                            <a href="/nosotros">
+                            <a href="/planes">
                                 <button className="px-6 py-3 border border-neon-cyan/50 text-neon-cyan font-bold uppercase tracking-widest text-sm rounded-xl hover:bg-neon-cyan hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.1)] hover:shadow-[0_0_30px_rgba(0,242,255,0.3)] cursor-pointer">
                                     PLANES & VALORES
                                 </button>
