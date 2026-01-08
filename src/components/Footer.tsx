@@ -52,16 +52,14 @@ export default function Footer() {
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 border-t border-white/10 pt-16">
 
                     {/* Columna de Marca y Redes */}
-                    <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mb-12 lg:mb-0"> {/* Añadido mb-12 para espacio en mobile */}
                         <a href="/" className="flex items-center gap-2 mb-6 w-fit mx-auto lg:mx-0 hover:opacity-80 transition-opacity cursor-pointer">
                             <LogoAnimation />
-                           
                         </a>
                         <p className="text-white/50 max-w-sm text-lg leading-relaxed mb-8 mx-auto lg:mx-0">
                             Redefiniendo el límite humano a través de tecnología, diseño y sudor honesto.
                         </p>
                         <div className="flex gap-4 mx-auto lg:mx-0">
-                            {/* Solo incluimos Instagram y Facebook como en el original, Twitter no estaba en el loop */}
                             {[Instagram, Facebook].map((Icon, i) => (
                                 <a key={i} href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-black hover:bg-neon-green hover:border-transparent transition-all duration-300 hover:scale-110 cursor-pointer">
                                     <Icon className="w-5 h-5" />
@@ -69,7 +67,6 @@ export default function Footer() {
                             ))}
                         </div>
 
-                        {/* Botón de Planes */}
                         <div className="mt-8 mx-auto lg:mx-0">
                             <a href="/planes">
                                 <button className="px-6 py-3 border border-neon-cyan/50 text-neon-cyan font-bold uppercase tracking-widest text-sm rounded-xl hover:bg-neon-cyan hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.1)] hover:shadow-[0_0_30px_rgba(0,242,255,0.3)] cursor-pointer">
@@ -79,10 +76,11 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Columnas de Links y Legal/Contacto */}
-                    <div className="flex flex-col sm:flex-row gap-12 lg:gap-20 lg:w-1/2 justify-between">
-                        {/* Links Column */}
-                        <div>
+                    {/* Contenedor para "Explora" y "Legal" que se dividirá en 2 columnas */}
+                    <div className="flex flex-col sm:flex-row sm:flex-wrap gap-12 lg:gap-20 lg:w-1/2 justify-between">
+
+                        {/* Links Column (Explora) */}
+                        <div className="w-full sm:w-1/2 lg:w-auto"> {/* Controlamos el ancho para que en sm y md queden 2 columnas */}
                             <h4 className="text-white font-bold uppercase tracking-widest mb-6 text-center sm:text-left">Explora</h4>
                             <ul className="space-y-4 text-center sm:text-left">
                                 {["Clases", "Entrenadores", "Horarios", "Membresías"].map((item) => (
@@ -97,7 +95,7 @@ export default function Footer() {
                         </div>
 
                         {/* Legal/Contact Column */}
-                        <div>
+                        <div className="w-full sm:w-1/2 lg:w-auto"> {/* Controlamos el ancho para que en sm y md queden 2 columnas */}
                             <h4 className="text-white font-bold uppercase tracking-widest mb-6 text-center sm:text-left">Legal</h4>
                             <ul className="space-y-4 text-center sm:text-left">
                                 {["Términos", "Privacidad", "Cookies", "Contacto"].map((item) => (
