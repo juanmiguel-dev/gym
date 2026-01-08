@@ -73,7 +73,8 @@ export default function PricingPage() {
                         <div className="mb-8">
                             <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">Escala</h3>
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-black text-white">Consultar</span>
+                                <span className="text-5xl font-black text-white">$499.000</span>
+                                <span className="text-white/40 font-medium">/ pago único</span>
                             </div>
                             <p className="text-neon-cyan text-sm font-bold mt-2 flex items-center gap-2">
                                 <Zap className="w-4 h-4" /> Sistema PRO
@@ -100,7 +101,7 @@ export default function PricingPage() {
 
                         <Link href="https://wa.me/5491112345678?text=Hola,%20me%20interesa%20el%20Plan%20Escala%20con%20WordPress" target="_blank" className="block w-full">
                             <button className="w-full py-4 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest rounded-xl hover:border-neon-cyan hover:text-neon-cyan transition-all duration-300 cursor-pointer">
-                                Consultar
+                                Quiero Este Plan
                             </button>
                         </Link>
                     </div>
@@ -123,8 +124,7 @@ export default function PricingPage() {
                                 "ACF - Advanced Custom Fields",
                                 "Sistemas de Turnos Complejos",
                                 "E-commerce Avanzado",
-                                "Integraciones API Custom",
-                                "Soporte Prioritario 24/7"
+                                "Integraciones API Custom"
                             ].map((feature, i) => (
                                 <li key={i} className="flex items-start gap-3">
                                     <div className="mt-1 w-5 h-5 rounded-full bg-white/5 flex items-center justify-center shrink-0">
