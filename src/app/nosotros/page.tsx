@@ -41,7 +41,7 @@ export default function PricingPage() {
                         </div>
 
                         <div className="mb-8 mt-4">
-                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">Plan Base</h3>
+                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">PLAN WEBSITE</h3>
                             <div className="flex items-baseline gap-1">
                                 <span className="text-5xl font-black text-white">$120.000</span>
                                 <span className="text-white/40 font-medium">/ pago único</span>
