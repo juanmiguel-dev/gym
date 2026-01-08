@@ -14,18 +14,13 @@ export default function PricingPage() {
                 {/* Creative Hero Intro */}
                 <div className="max-w-4xl mx-auto text-center mb-24">
                     <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-none">
-                        Tu Gimnasio entrena cuerpos. <br />
+                        DESARROLLOS PREMIUM. <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-cyan">
-                            Nosotros entrenamos tu negocio.
+                            GANAR GANAR.
                         </span>
                     </h1>
                     <p className="text-white/60 text-xl font-light mb-6 max-w-3xl mx-auto leading-relaxed">
-                        En un mundo saturado de ofertas, la primera repetición se hace on-line.
-                        Si tu web no transmite la potencia de tu sala de musculación,
-                        <span className="text-white font-medium"> estás perdiendo la batalla antes de empezar.</span>
-                    </p>
-                    <p className="text-neon-cyan/80 text-sm font-bold tracking-widest uppercase">
-                        No vendemos plantillas. Diseñamos activos digitales que sudan rentabilidad.
+                        En un mundo saturado de ofertas, no vendemos plantillas. Diseñamos activos digitales que sudan rentabilidad.
                     </p>
                 </div>
 
