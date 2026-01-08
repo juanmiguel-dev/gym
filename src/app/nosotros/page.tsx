@@ -11,13 +11,21 @@ export default function PricingPage() {
             <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-neon-fuchsia/10 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="max-w-7xl mx-auto relative z-10">
-                {/* Header */}
-                <div className="text-center mb-24">
-                    <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-none">
-                        Tu Web al <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-cyan">Siguiente Nivel</span>
+                {/* Creative Hero Intro */}
+                <div className="max-w-4xl mx-auto text-center mb-24">
+                    <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-none">
+                        Tu Gimnasio entrena cuerpos. <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-cyan">
+                            Nosotros entrenamos tu negocio.
+                        </span>
                     </h1>
-                    <p className="text-white/60 text-xl max-w-2xl mx-auto font-light">
-                        Elige la potencia que tu marca necesita hoy. Sin letra chica, sin complicaciones.
+                    <p className="text-white/60 text-xl font-light mb-6 max-w-3xl mx-auto leading-relaxed">
+                        En un mundo saturado de ofertas, la primera repetición se hace on-line.
+                        Si tu web no transmite la potencia de tu sala de musculación,
+                        <span className="text-white font-medium"> estás perdiendo la batalla antes de empezar.</span>
+                    </p>
+                    <p className="text-neon-cyan/80 text-sm font-bold tracking-widest uppercase">
+                        No vendemos plantillas. Diseñamos activos digitales que sudan rentabilidad.
                     </p>
                 </div>
 

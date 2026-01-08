@@ -80,10 +80,12 @@ export default function ServiceCard({
                     </div>
 
                     {/* CTA Button */}
-                    <button className={`flex items-center gap-2 px-6 py-3 bg-white text-black font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-${color === "cyan" ? "neon-cyan" : "neon-green"} transition-all duration-300 w-fit`}>
-                        <span>Reservar Clase</span>
-                        <ArrowRight className="w-4 h-4" />
-                    </button>
+                    <a href="/turnos" className="block w-fit">
+                        <button className={`flex items-center gap-2 px-6 py-3 bg-white text-black font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-${color === "cyan" ? "neon-cyan" : "neon-green"} transition-all duration-300 w-fit cursor-pointer`}>
+                            <span>Reservar Clase</span>
+                            <ArrowRight className="w-4 h-4" />
+                        </button>
+                    </a>
                 </div>
 
                 {/* Neon Border on Hover */}
