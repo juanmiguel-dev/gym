@@ -81,11 +81,11 @@ export default function Footer() {
 
                         {/* Links Column (Explora) */}
                         <div className="w-full">
-                            <h4 className="text-white font-bold uppercase tracking-widest mb-4 text-sm text-center sm:text-left">Explora</h4>
-                            <ul className="space-y-3 text-center sm:text-left">
+                            <h4 className="text-white font-bold uppercase tracking-widest mb-4 text-sm text-left">Explora</h4>
+                            <ul className="space-y-3 text-left">
                                 {["Clases", "Entrenadores", "Horarios", "Membresías"].map((item) => (
                                     <li key={item}>
-                                        <a href={item === "Clases" ? "/servicios" : "#"} className="text-white/60 hover:text-neon-cyan transition-colors flex items-center gap-2 group justify-center sm:justify-start cursor-pointer text-sm">
+                                        <a href={item === "Clases" ? "/servicios" : "#"} className="text-white/60 hover:text-neon-cyan transition-colors flex items-center gap-2 group justify-start cursor-pointer text-sm">
                                             <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                                             <span>{item}</span>
                                         </a>
@@ -96,8 +96,8 @@ export default function Footer() {
 
                         {/* Legal/Contact Column */}
                         <div className="w-full">
-                            <h4 className="text-white font-bold uppercase tracking-widest mb-4 text-sm text-center sm:text-left">Legal</h4>
-                            <ul className="space-y-3 text-center sm:text-left">
+                            <h4 className="text-white font-bold uppercase tracking-widest mb-4 text-sm text-left">Legal</h4>
+                            <ul className="space-y-3 text-left">
                                 {["Términos", "Privacidad", "Cookies", "Contacto"].map((item) => (
                                     <li key={item}>
                                         <a href="#" className="text-white/60 hover:text-white transition-colors cursor-pointer text-sm">
