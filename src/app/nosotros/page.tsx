@@ -109,7 +109,7 @@ export default function PricingPage() {
                     {/* Plan 3: Custom */}
                     <div className="relative group p-8 bg-glass-dark rounded-[2rem] border border-white/5 hover:border-neon-fuchsia/50 hover:shadow-[0_0_40px_rgba(255,0,255,0.1)] transition-all duration-500 hover:-translate-y-2 md:mt-16">
                         <div className="mb-8">
-                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">Enterprise</h3>
+                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">CUSTOM</h3>
                             <div className="flex items-baseline gap-1">
                                 <span className="text-4xl font-black text-white">A Medida</span>
                             </div>

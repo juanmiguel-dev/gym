@@ -43,7 +43,7 @@ export default function Footer() {
 
                 {/* Massive CTA */}
                 <div className="mb-24 text-center">
-                    <h2 ref={textRef} className="text-[12vw] font-black uppercase leading-[0.8] text-transparent bg-clip-text bg-gradient-to-b from-white to-white/10 tracking-tighter mix-blend-overlay opacity-50 select-none">
+                    <h2 ref={textRef} className="text-[10vw] font-black uppercase leading-[0.8] text-transparent bg-clip-text bg-gradient-to-b from-white to-white/10 tracking-tighter mix-blend-overlay opacity-50 select-none">
                         PACHAGYM
                     </h2>
                 </div>
