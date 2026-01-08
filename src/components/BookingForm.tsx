@@ -68,7 +68,6 @@ export default function BookingForm() {
     }
 
     return (
-    return (
         <div ref={formRef} className="w-full max-w-5xl mx-auto relative group">
             {/* Eternal Silver Gradient Border */}
             <div className="absolute -inset-[1px] rounded-[3rem] overflow-hidden">
