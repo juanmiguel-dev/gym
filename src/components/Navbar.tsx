@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MoveRight, X, Home, Dumbbell, Calendar, BookOpen, Heart } from "lucide-react";
+import { MoveRight, X, Home, Dumbbell, Calendar, BookOpen, Heart, Users, Clock, CreditCard, FileText, Shield, Mail, ArrowUpRight } from "lucide-react";
 import gsap from "gsap";
 import LogoAnimation from "./LogoAnimation";
 
