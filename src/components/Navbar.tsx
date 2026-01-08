@@ -96,7 +96,7 @@ export default function Navbar() {
                             </button>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-grow">
+                        <div className="grid grid-cols-2 gap-4 sm:gap-6 flex-grow">
                             {MENU_ITEMS.map((item) => (
                                 <a
                                     key={item.label}
@@ -106,7 +106,6 @@ export default function Navbar() {
                                 >
                                     <div className={`absolute inset-0 bg-gradient-to-br ${item.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                                     <div className="relative z-10 flex h-full flex-col justify-between gap-6">
-                                        <span className="text-xs tracking-[0.4em] text-white/40 uppercase">Explorar</span>
                                         <h3 className="text-3xl font-black text-white tracking-tight">{item.label}</h3>
                                         <div className="flex items-center gap-3 text-sm uppercase tracking-[0.3em] text-white/60">
                                             Ingresar
