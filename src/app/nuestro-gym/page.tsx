@@ -86,8 +86,8 @@ export default function NuestroGymPage() {
                     </h2>
 
                     <p className="relative z-10 text-white/60 text-lg mb-10 max-w-xl mx-auto">
-                        Deja de perder clientes por una web lenta y fea. <br />
-                        Hablemos de cómo llevar tu marca al siguiente nivel digital.
+                         <br />
+                        
                     </p>
 
                     <Link href="https://wa.me/542235451872?text=Hola,%20vi%20la%20demo%20de%20Pachagym%20y%20quiero%20algo%20así%20para%20mi%20negocio" target="_blank" className="relative z-10 inline-block">
