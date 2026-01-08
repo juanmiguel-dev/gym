@@ -73,7 +73,7 @@ export default function HeroSection() {
 
             <p
               ref={subtitleRef}
-              className="text-white/70 text-xs uppercase tracking-widest font-bold"
+              className="text-lg md:text-2xl text-white/90 font-light mb-10 max-w-5xl mx-auto leading-relaxed"
             >
               Experimenta la máxima sinergia entre entrenamiento de vanguardia y disciplina orgánica. <br className="hidden md:block" />
 

@@ -89,7 +89,7 @@ export default function BookingForm() {
                                 <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs">01</span>
                                 Elige tu Actividad
                             </h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
                                 {ACTIVITIES.map((activity) => {
                                     const Icon = activity.icon;
                                     const isSelected = formData.activities.includes(activity.id);
