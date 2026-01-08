@@ -59,7 +59,7 @@ export default function HeroSection() {
           <div className="p-10 md:p-24 text-center">
             {/* Pill Label */}
             <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/30 px-4 py-1 rounded-full mb-10 animate-pulse">
-              <div className="w-1.5 h-1.5 bg-neon-green rounded-full shadow-[0_0_8px_#39ff14]" />
+              <div className="w-1.4 h-1.5 bg-neon-green rounded-full shadow-[0_0_8px_#39ff14]" />
               <span className="text-neon-green text-[10px] font-bold uppercase tracking-[0.2em]">El futuro del fitness es hoy</span>
             </div>
 
@@ -75,7 +75,7 @@ export default function HeroSection() {
               ref={subtitleRef}
               className="text-lg md:text-2xl text-white/90 font-light mb-16 max-w-3xl mx-auto leading-relaxed"
             >
-              Experimenta la máxima sinergia entre entrenamiento de vanguardia y estética inspiradora. <br className="hidden md:block" />
+              Experimenta la máxima sinergia entre entrenamiento de vanguardia y disciplina orgánica. <br className="hidden md:block" />
 
             </p>
 
