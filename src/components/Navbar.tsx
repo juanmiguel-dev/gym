@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MoveRight, X, Home, Dumbbell, Calendar, BookOpen, Heart, Users, Clock, CreditCard, FileText, Shield, Mail, ArrowUpRight } from "lucide-react";
+import { MoveRight, X, Home, Dumbbell, Calendar, BookOpen, Heart, Users, Clock, CreditCard, FileText, Shield, Mail, ArrowUpRight, Menu } from "lucide-react";
 import gsap from "gsap";
 import LogoAnimation from "./LogoAnimation";
 
@@ -71,7 +71,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(true)}
                     aria-label="Abrir menú"
                 >
-                    <MoveRight className="text-white" size={20} />
+                    <Menu className="text-white" size={20} />
                 </button>
             </nav>
 
