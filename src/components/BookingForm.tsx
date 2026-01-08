@@ -123,7 +123,7 @@ export default function BookingForm() {
                                             </div>
 
                                             {/* Title */}
-                                            <h3 className={`text-xl font-bold mb-2 transition-colors duration-500 relative z-10
+                                            <h3 className={`text-base font-bold mb-2 transition-colors duration-500 relative z-10
                                         ${isSelected ? activity.color : 'text-white group-hover:text-white'}
                                     `}>
                                                 {activity.name}
