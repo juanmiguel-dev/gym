@@ -65,7 +65,7 @@ export default function HeroSection() {
 
             <h1
               ref={titleRef}
-              className="text-5xl md:text-[7.7rem] font-black uppercase tracking-[-0.04em] mb-10 text-white leading-[0.85] select-none"
+              className="text-4xl md:text-[5.4rem] font-black uppercase tracking-[-0.04em] mb-10 text-white leading-[0.85] select-none"
             >
               TRANSFORMA <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-white to-neon-green">TU LÍMITE</span>
