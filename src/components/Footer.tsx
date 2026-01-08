@@ -75,7 +75,9 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
+                  
 
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/10 pt-16">
                     {/* Links Column */}
                     <div>
                         <h4 className="text-white font-bold uppercase tracking-widest mb-6">Explora</h4>
@@ -105,7 +107,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-
+                </div>
                 {/* Bottom Bar */}
                 <div className="border-t border-white/5 mt-20 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-white/30 text-sm font-medium">
