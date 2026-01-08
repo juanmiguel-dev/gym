@@ -1,15 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MoveRight, X } from "lucide-react";
+import { MoveRight, X, Home, Dumbbell, Calendar, BookOpen, Heart } from "lucide-react";
 import gsap from "gsap";
 import LogoAnimation from "./LogoAnimation";
 
 const MENU_ITEMS = [
-    { label: "Nuestro Gym", href: "/nuestro-gym", accent: "from-neon-cyan/40 via-transparent to-transparent" },
-    { label: "Clases", href: "/servicios", accent: "from-neon-green/40 via-transparent to-transparent" },
-    { label: "Planes", href: "/planes", accent: "from-neon-fuchsia/40 via-transparent to-transparent" },
-    { label: "Blog", href: "/blog", accent: "from-white/20 via-transparent to-transparent" },
+    { label: "Inicio", href: "/", icon: Home, accent: "from-neon-cyan/40 via-transparent to-transparent" },
+    { label: "Nuestro Gym", href: "/nuestro-gym", icon: Dumbbell, accent: "from-neon-cyan/40 via-transparent to-transparent" },
+    { label: "Clases", href: "/servicios", icon: Calendar, accent: "from-neon-green/40 via-transparent to-transparent" },
+    { label: "Planes", href: "/planes", icon: Heart, accent: "from-neon-fuchsia/40 via-transparent to-transparent" },
+    { label: "Blog", href: "/blog", icon: BookOpen, accent: "from-white/20 via-transparent to-transparent" },
 ];
 
 export default function Navbar() {
@@ -81,50 +82,49 @@ export default function Navbar() {
                         <div className="absolute bottom-0 left-0 w-[280px] h-[280px] rounded-full bg-neon-green/20 blur-[120px]" />
                     </div>
 
-                    <div className="relative z-10 max-w-5xl mx-auto px-6 py-10 flex flex-col h-full">
-                        <div className="flex items-center justify-between mb-12">
+                    <div className="relative z-10 max-w-md mx-auto px-6 py-8 flex flex-col h-full">
+                        <div className="flex items-center justify-between mb-8">
                             <a href="/" className="flex items-center gap-3 text-white">
                                 <LogoAnimation />
-                                <span className="text-2xl font-black tracking-tight">PACHAGYM</span>
+                                <span className="text-xl font-black tracking-tight">PACHAGYM</span>
                             </a>
                             <button
-                                className="w-12 h-12 rounded-full border border-white/10 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all"
+                                className="w-10 h-10 rounded-full border border-white/10 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all"
                                 onClick={() => setIsOpen(false)}
                                 aria-label="Cerrar menú"
                             >
-                                <X className="text-white" size={26} />
+                                <X className="text-white" size={20} />
                             </button>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4 sm:gap-6 flex-grow">
+                        <div className="flex flex-col gap-3 flex-grow">
                             {MENU_ITEMS.map((item) => (
                                 <a
                                     key={item.label}
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className={`relative group p-8 rounded-[2rem] border border-white/10 bg-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-neon-cyan/40`}
+                                    className={`relative group p-4 rounded-xl border border-white/10 bg-white/5 overflow-hidden transition-all duration-300 hover:bg-white/10 hover:border-neon-cyan/30`}
                                 >
-                                    <div className={`absolute inset-0 bg-gradient-to-br ${item.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                                    <div className="relative z-10 flex h-full flex-col justify-between gap-6">
-                                        <h3 className="text-3xl font-black text-white tracking-tight">{item.label}</h3>
-                                        <div className="flex items-center gap-3 text-sm uppercase tracking-[0.3em] text-white/60">
-                                            Ingresar
-                                            <MoveRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-neon-cyan/20 group-hover:border-neon-cyan/30 transition-colors">
+                                            <item.icon className="w-5 h-5 text-white/60 group-hover:text-neon-cyan transition-colors" />
                                         </div>
+                                        <span className="text-white font-medium text-sm">{item.label}</span>
+                                        <MoveRight className="w-4 h-4 text-white/40 ml-auto group-hover:text-neon-cyan group-hover:translate-x-1 transition-all" />
                                     </div>
                                 </a>
                             ))}
                         </div>
 
-                        <div className="mt-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-                            <p className="text-white/40 text-sm uppercase tracking-[0.4em] text-center sm:text-left">
-                                Reservá tu clase ahora mismo
-                            </p>
-                            <a href="/turnos" onClick={() => setIsOpen(false)}>
-                                <button className="w-full sm:w-auto px-8 py-4 bg-neon-green text-black font-black uppercase tracking-[0.4em] rounded-2xl hover:bg-white transition-all">
-                                    Turnos Express
+                        <div className="mt-8 pt-6 border-t border-white/10">
+                            <a href="/turnos" onClick={() => setIsOpen(false)} className="block">
+                                <button className="w-full px-6 py-3 bg-neon-green text-black font-bold uppercase tracking-wider text-sm rounded-xl hover:bg-white transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)]">
+                                    Reservar Turno
                                 </button>
                             </a>
+                            <p className="text-white/40 text-xs text-center mt-3">
+                                Reservá tu clase en segundos
+                            </p>
                         </div>
                     </div>
                 </div>
