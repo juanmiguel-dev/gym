@@ -120,7 +120,7 @@ export default function PricingPage() {
                         <ul className="space-y-4 mb-10">
                             {[
                                 "Desarrollo Full Stack a Medida",
-                                "Apps Móviles (iOS/Android)",
+                                "ACF - Advanced Custom Fields",
                                 "Sistemas de Turnos Complejos",
                                 "E-commerce Avanzado",
                                 "Integraciones API Custom",
