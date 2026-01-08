@@ -54,7 +54,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 w-full flex justify-center">
         {/* Main Lumina Card */}
-        <div className="bg-[#050505] rounded-[3rem] border border-white/5 shadow-[0_0_100px_rgba(0,0,0,0.5)] overflow-hidden relative group w-full max-w-[70vw]">
+        <div className="bg-[#050505] rounded-[3rem] border border-white/5 shadow-[0_0_100px_rgba(0,0,0,0.5)] overflow-hidden relative group w-full max-w-[90vw]">
 
           <div className="p-10 md:p-24 text-center">
             {/* Pill Label */}
