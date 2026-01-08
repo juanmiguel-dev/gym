@@ -61,7 +61,7 @@ export default function PricingPage() {
                             ))}
                         </ul>
 
-                        <Link href="https://wa.me/5491112345678?text=Hola,%20quiero%20el%20Plan%20Despegue%20de%20$120.000" target="_blank" className="block w-full">
+                        <Link href="https://wa.me/542235451872?text=Hola,%20quiero%20el%20Plan%20Despegue%20de%20$120.000" target="_blank" className="block w-full">
                             <button className="w-full py-4 bg-neon-green text-black font-black uppercase tracking-widest rounded-xl hover:bg-white transition-colors duration-300 shadow-[0_0_20px_rgba(57,255,20,0.3)] group-hover:shadow-[0_0_30px_rgba(57,255,20,0.5)] cursor-pointer">
                                 Quiero Este Plan
                             </button>
@@ -71,14 +71,14 @@ export default function PricingPage() {
                     {/* Plan 2: Membership System */}
                     <div className="relative group p-8 bg-glass-dark rounded-[2rem] border border-white/5 hover:border-neon-cyan/50 hover:shadow-[0_0_40px_rgba(0,242,255,0.1)] transition-all duration-500 hover:-translate-y-2 md:mt-8">
                         <div className="mb-8">
-                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">Escala</h3>
-                            <div className="flex items-baseline gap-1">
-                                <span className="text-5xl font-black text-white">$499.000</span>
-                                <span className="text-white/40 font-medium">/ pago único</span>
-                            </div>
-                            <p className="text-neon-cyan text-sm font-bold mt-2 flex items-center gap-2">
-                                <Zap className="w-4 h-4" /> Sistema PRO
-                            </p>
+                            <h3 className="text-white/50 font-bold uppercase tracking-widest text-sm mb-2">CLUB3>
+                                <div className="flex items-baseline gap-1">
+                                    <span className="text-5xl font-black text-white">$499.000</span>
+                                    <span className="text-white/40 font-medium">/ pago único</span>
+                                </div>
+                                <p className="text-neon-cyan text-sm font-bold mt-2 flex items-center gap-2">
+                                    <Zap className="w-4 h-4" /> Sistema de Membresía y Gestión de Contenidos.
+                                </p>
                         </div>
 
                         <ul className="space-y-4 mb-10">
@@ -99,7 +99,7 @@ export default function PricingPage() {
                             ))}
                         </ul>
 
-                        <Link href="https://wa.me/5491112345678?text=Hola,%20me%20interesa%20el%20Plan%20Escala%20con%20WordPress" target="_blank" className="block w-full">
+                        <Link href="https://wa.me/542235451872?text=Hola,%20me%20interesa%20el%20Plan%20Escala%20con%20WordPress" target="_blank" className="block w-full">
                             <button className="w-full py-4 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest rounded-xl hover:border-neon-cyan hover:text-neon-cyan transition-all duration-300 cursor-pointer">
                                 Quiero Este Plan
                             </button>
@@ -135,7 +135,7 @@ export default function PricingPage() {
                             ))}
                         </ul>
 
-                        <Link href="https://wa.me/5491112345678?text=Hola,%20necesito%20una%20solucion%20custom%20para%20mi%20gym" target="_blank" className="block w-full">
+                        <Link href="https://wa.me/542235451872?text=Hola,%20necesito%20una%20solucion%20custom%20para%20mi%20gym" target="_blank" className="block w-full">
                             <button className="w-full py-4 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest rounded-xl hover:border-neon-fuchsia hover:text-neon-fuchsia transition-all duration-300 cursor-pointer">
                                 Agendar Call
                             </button>

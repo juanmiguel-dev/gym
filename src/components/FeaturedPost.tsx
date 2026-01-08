@@ -75,7 +75,7 @@ export default function FeaturedPost() {
                             <div className="w-20 h-1 bg-white/10 mb-8 group-hover:w-full group-hover:bg-gradient-to-r group-hover:from-neon-cyan group-hover:to-neon-fuchsia transition-all duration-700" />
 
                             <p className="text-white/60 text-lg leading-relaxed mb-12 max-w-xl group-hover:text-white/80 transition-colors">
-                                Una presencia digital premium no es un lujo, es la única forma de justificar precios más altos y atraer a los clientes que realmente valoran tu servicio. Descubre por qué el diseño web es tu mejor vendedor.
+                                Una presencia digital premium no es un lujo, es una posibilidad a tu alcance..
                             </p>
 
                             <a href="/blog/importancia-web-seo" className="flex items-center gap-4 text-white font-bold uppercase tracking-widest text-sm group-hover:text-neon-cyan transition-colors cursor-pointer w-fit">
