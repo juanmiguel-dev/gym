@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Instagram, Twitter, Facebook, ExternalLink, ArrowUpRight } from "lucide-react";
-import LogoAnimation from "./LogoAnimation"; // Asumo que LogoAnimation es un componente propio.
+import DumbbellAnimation from "./DumbbellAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +54,7 @@ export default function Footer() {
                     {/* Columna de Marca y Redes */}
                     <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
                         <a href="/" className="flex items-center gap-2 mb-4 w-fit mx-auto lg:mx-0 hover:opacity-80 transition-opacity cursor-pointer">
-                            <LogoAnimation />
+                            <DumbbellAnimation />
                         </a>
                         <p className="text-white/50 max-w-sm text-base lg:text-lg leading-relaxed mb-6 mx-auto lg:mx-0">
                             Redefiniendo el límite humano a través de tecnología, diseño y sudor honesto.

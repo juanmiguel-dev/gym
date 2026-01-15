@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { MoveRight, X, Home, Dumbbell, Calendar, BookOpen, Heart, Users, Clock, CreditCard, FileText, Shield, Mail, ArrowUpRight, Menu } from "lucide-react";
 import gsap from "gsap";
-import LogoAnimation from "./LogoAnimation";
+import DumbbellAnimation from "./DumbbellAnimation";
 
 const MENU_ITEMS = [
     { label: "Inicio", href: "/", icon: Home, accent: "from-neon-cyan/40 via-transparent to-transparent" },
@@ -45,7 +45,7 @@ export default function Navbar() {
             >
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-2 pl-2 hover:opacity-80 transition-opacity cursor-pointer">
-                    <LogoAnimation />
+                    <DumbbellAnimation />
                     <span className="text-white font-bold tracking-tighter text-xl hidden sm:block">PACHAGYM</span>
                 </a>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
                     <div className="relative z-10 max-w-md mx-auto px-6 py-8 flex flex-col h-full">
                         <div className="flex items-center justify-between mb-8">
                             <a href="/" className="flex items-center gap-3 text-white">
-                                <LogoAnimation />
+                                <DumbbellAnimation />
                                 <span className="text-xl font-black tracking-tight">PACHAGYM</span>
                             </a>
                             <button
