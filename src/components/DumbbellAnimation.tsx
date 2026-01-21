@@ -3,16 +3,16 @@
 import React from 'react';
 import { useLottie } from 'lottie-react';
 
-// Placeholder Lottie JSON for a dumbbell.
-// You should replace this with the actual JSON data for your chosen dumbbell animation.
+// Nuevo JSON de Lottie para una pesa animada.
+// Este JSON es un ejemplo más complejo y animado.
 const dumbbellAnimationData = {
     "v": "5.7.4",
-    "fr": 30,
+    "fr": 60,
     "ip": 0,
-    "op": 60,
+    "op": 120,
     "w": 100,
     "h": 100,
-    "nm": "Dumbbell",
+    "nm": "Dumbbell Animation",
     "ddd": 0,
     "assets": [],
     "layers": [
@@ -20,7 +20,7 @@ const dumbbellAnimationData = {
             "ddd": 0,
             "ind": 1,
             "ty": 4,
-            "nm": "Dumbbell",
+            "nm": "Dumbbell Bar",
             "sr": 1,
             "ks": {
                 "o": { "a": 0, "k": 100, "ix": 11 },
@@ -53,15 +53,15 @@ const dumbbellAnimationData = {
                                         [-0.75, -0.75]
                                     ],
                                     "v": [
-                                        [20, -10],
-                                        [20, 10],
-                                        [-20, 10],
-                                        [-20, -10]
+                                        [20, -5],
+                                        [20, 5],
+                                        [-20, 5],
+                                        [-20, -5]
                                     ]
                                 },
                                 "ix": 2
                             },
-                            "nm": "Bar",
+                            "nm": "Bar Shape",
                             "mn": "ADBE Vector Shape - Group",
                             "hd": false
                         },
@@ -73,35 +73,33 @@ const dumbbellAnimationData = {
                             "nm": "Fill",
                             "mn": "ADBE Vector Fill",
                             "hd": false
-                        },
-                        {
-                            "ty": "st",
-                            "c": { "a": 0, "k": [0.2, 0.2, 0.2, 1], "ix": 5 },
-                            "o": { "a": 0, "k": 100, "ix": 6 },
-                            "w": { "a": 0, "k": 2, "ix": 7 },
-                            "lc": 1,
-                            "lj": 1,
-                            "ml": 4,
-                            "nm": "Stroke",
-                            "mn": "ADBE Vector Stroke",
-                            "hd": false
-                        },
-                        {
-                            "ty": "tr",
-                            "p": { "a": 0, "k": [0, 0], "ix": 2 },
-                            "a": { "a": 0, "k": [0, 0], "ix": 1 },
-                            "s": { "a": 0, "k": [100, 100], "ix": 3 },
-                            "r": { "a": 0, "k": 0, "ix": 6 },
-                            "o": { "a": 0, "k": 100, "ix": 7 },
-                            "sk": { "a": 0, "k": 0, "ix": 4 },
-                            "sa": { "a": 0, "k": 0, "ix": 5 },
-                            "nm": "Transform"
                         }
                     ],
                     "nm": "Bar Group",
                     "mn": "ADBE Vector Group",
                     "hd": false
-                },
+                }
+            ],
+            "ip": 0,
+            "op": 120,
+            "st": 0,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 2,
+            "ty": 4,
+            "nm": "Weight Left",
+            "sr": 1,
+            "ks": {
+                "o": { "a": 0, "k": 100, "ix": 11 },
+                "r": { "a": 1, "k": [{ "t": 0, "s": [0] }, { "t": 60, "s": [360] }, { "t": 120, "s": [0] }], "ix": 10 },
+                "p": { "a": 0, "k": [25, 50, 0], "ix": 2 },
+                "a": { "a": 0, "k": [50, 50, 0], "ix": 1 },
+                "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+            },
+            "ao": 0,
+            "shapes": [
                 {
                     "ty": "gr",
                     "it": [
@@ -124,15 +122,15 @@ const dumbbellAnimationData = {
                                         [0.552, 0]
                                     ],
                                     "v": [
-                                        [15, 0],
-                                        [0, 15],
-                                        [-15, 0],
-                                        [0, -15]
+                                        [10, 0],
+                                        [0, 10],
+                                        [-10, 0],
+                                        [0, -10]
                                     ]
                                 },
                                 "ix": 2
                             },
-                            "nm": "Weight Left",
+                            "nm": "Weight Left Shape",
                             "mn": "ADBE Vector Shape - Group",
                             "hd": false
                         },
@@ -144,35 +142,33 @@ const dumbbellAnimationData = {
                             "nm": "Fill",
                             "mn": "ADBE Vector Fill",
                             "hd": false
-                        },
-                        {
-                            "ty": "st",
-                            "c": { "a": 0, "k": [0.2, 0.2, 0.2, 1], "ix": 5 },
-                            "o": { "a": 0, "k": 100, "ix": 6 },
-                            "w": { "a": 0, "k": 2, "ix": 7 },
-                            "lc": 1,
-                            "lj": 1,
-                            "ml": 4,
-                            "nm": "Stroke",
-                            "mn": "ADBE Vector Stroke",
-                            "hd": false
-                        },
-                        {
-                            "ty": "tr",
-                            "p": { "a": 0, "k": [-20, 0], "ix": 2 },
-                            "a": { "a": 0, "k": [0, 0], "ix": 1 },
-                            "s": { "a": 0, "k": [100, 100], "ix": 3 },
-                            "r": { "a": 0, "k": 0, "ix": 6 },
-                            "o": { "a": 0, "k": 100, "ix": 7 },
-                            "sk": { "a": 0, "k": 0, "ix": 4 },
-                            "sa": { "a": 0, "k": 0, "ix": 5 },
-                            "nm": "Transform"
                         }
                     ],
                     "nm": "Weight Left Group",
                     "mn": "ADBE Vector Group",
                     "hd": false
-                },
+                }
+            ],
+            "ip": 0,
+            "op": 120,
+            "st": 0,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 3,
+            "ty": 4,
+            "nm": "Weight Right",
+            "sr": 1,
+            "ks": {
+                "o": { "a": 0, "k": 100, "ix": 11 },
+                "r": { "a": 1, "k": [{ "t": 0, "s": [0] }, { "t": 60, "s": [-360] }, { "t": 120, "s": [0] }], "ix": 10 },
+                "p": { "a": 0, "k": [75, 50, 0], "ix": 2 },
+                "a": { "a": 0, "k": [50, 50, 0], "ix": 1 },
+                "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+            },
+            "ao": 0,
+            "shapes": [
                 {
                     "ty": "gr",
                     "it": [
@@ -195,15 +191,15 @@ const dumbbellAnimationData = {
                                         [0.552, 0]
                                     ],
                                     "v": [
-                                        [15, 0],
-                                        [0, 15],
-                                        [-15, 0],
-                                        [0, -15]
+                                        [10, 0],
+                                        [0, 10],
+                                        [-10, 0],
+                                        [0, -10]
                                     ]
                                 },
                                 "ix": 2
                             },
-                            "nm": "Weight Right",
+                            "nm": "Weight Right Shape",
                             "mn": "ADBE Vector Shape - Group",
                             "hd": false
                         },
@@ -215,29 +211,6 @@ const dumbbellAnimationData = {
                             "nm": "Fill",
                             "mn": "ADBE Vector Fill",
                             "hd": false
-                        },
-                        {
-                            "ty": "st",
-                            "c": { "a": 0, "k": [0.2, 0.2, 0.2, 1], "ix": 5 },
-                            "o": { "a": 0, "k": 100, "ix": 6 },
-                            "w": { "a": 0, "k": 2, "ix": 7 },
-                            "lc": 1,
-                            "lj": 1,
-                            "ml": 4,
-                            "nm": "Stroke",
-                            "mn": "ADBE Vector Stroke",
-                            "hd": false
-                        },
-                        {
-                            "ty": "tr",
-                            "p": { "a": 0, "k": [20, 0], "ix": 2 },
-                            "a": { "a": 0, "k": [0, 0], "ix": 1 },
-                            "s": { "a": 0, "k": [100, 100], "ix": 3 },
-                            "r": { "a": 0, "k": 0, "ix": 6 },
-                            "o": { "a": 0, "k": 100, "ix": 7 },
-                            "sk": { "a": 0, "k": 0, "ix": 4 },
-                            "sa": { "a": 0, "k": 0, "ix": 5 },
-                            "nm": "Transform"
                         }
                     ],
                     "nm": "Weight Right Group",
@@ -246,7 +219,7 @@ const dumbbellAnimationData = {
                 }
             ],
             "ip": 0,
-            "op": 60,
+            "op": 120,
             "st": 0,
             "bm": 0
         }
