@@ -63,9 +63,6 @@ export default function MeshBackground() {
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neon-fuchsia/5 blur-[100px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-neon-red/5 blur-[100px] rounded-full pointer-events-none" />
 
-            {/* Central Subtle White Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vh] bg-white/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
-
             {/* Noise Texture Overlay */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none brightness-150 contrast-150"
                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3Tag filter='url(%23noise)'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3C/svg%3E")` }}
